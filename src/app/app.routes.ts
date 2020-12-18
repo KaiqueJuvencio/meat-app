@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component'
 import { HomeComponent } from './home/home.component'
 import { RestaurantDetailComponent } from './restaurants-detail/restaurants-detail.component'
 import {Routes} from '@angular/router'
+import { LoginComponent } from './security/login/login.component';
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -17,5 +18,6 @@ export const ROUTES: Routes = [
       {path: 'reviews', component: ReviewsComponent}
   ]},
   {path: 'about', component: AboutComponent},
-  {path: 'projects', component: ProjectsComponent}
+  {path: 'projects', component: ProjectsComponent},
+  {path: 'login', component: LoginComponent}
 ]

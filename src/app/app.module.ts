@@ -1,8 +1,9 @@
+import { LoginService } from './security/login/login.service';
 import { ProjectsService } from './services/projects.service';
 import { ROUTES } from './app.routes';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -39,11 +40,11 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService, ProjectsService],
+  providers: [RestaurantsService, ProjectsService, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

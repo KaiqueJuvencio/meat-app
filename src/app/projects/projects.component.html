@@ -1,0 +1,20 @@
+<div class="consulta-button">
+  <button class="button"> Formulário</button>
+</div>
+
+<table id="customers">
+  <tr>
+    <th>ID</th>
+    <th>NOME</th>
+    <th>ATUALIZADO</th>
+    <th>ROTA ORIGEM</th>
+    <th>PATH</th>
+  </tr>
+  <tr *ngFor="let project of projects">
+    <td>{{project.id}}</td>
+    <td>{{project.name}}</td>
+    <td>{{project.updated_at}}</td>
+    <td>Brazil</td>
+    <td>{{project.full_name}}</td>
+  </tr>
+</table>

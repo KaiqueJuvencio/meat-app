@@ -19,6 +19,7 @@ import { MenuItemComponent } from './restaurants-detail/menu-item/menu-item.comp
 import { ReviewsComponent } from './restaurants-detail/reviews/reviews.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { LoginComponent } from './security/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { LoginComponent } from './security/login/login.component';
   imports: [
     BrowserModule,
     HttpModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [RestaurantsService, ProjectsService],

@@ -21,6 +21,7 @@ import { ReviewsComponent } from './restaurants-detail/reviews/reviews.component
 import { ProjectsComponent } from './projects/projects.component';
 import { LoginComponent } from './security/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SvgComponent } from './svg/svg.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuItemComponent,
     ReviewsComponent,
     ProjectsComponent,
-    LoginComponent
+    LoginComponent,
+    SvgComponent
   ],
   imports: [
     BrowserModule,

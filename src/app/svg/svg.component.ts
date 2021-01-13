@@ -7,29 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SvgComponent implements OnInit {
 
-  testeArray: string[] = [];
-  serverName;
+  estadosArray: string[] = [];
+  estadoValor;
+  ultimaPosicao;
   constructor() { }
 
   ngOnInit() {
   }
 
   teste(){
-    this.testeArray.push("teste");
-  }
-
-  print(){
-    console.log(this.testeArray);
-
-  }
-
-  onKey(event) {const inputValue = event.target.value;
-  console.log(event.target.teste.value);
+    this.estadosArray.push("teste");
   }
 
   OnInput(value) {
-    this.serverName = value;
-    console.log(this.serverName);
-
+    this.estadoValor = value;
+    if(this.estadosArray[this.ultimaPosicao] == value){
+      console.log("Não pode inserir");
+    }else{
+      this.estadosArray.push(this.estadoValor);
+    }
+    this.ultimaPosicao = this.estadosArray.length-1;
+    console.log(this.estadosArray);
    }
 }

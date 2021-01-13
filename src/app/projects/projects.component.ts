@@ -15,9 +15,4 @@ export class ProjectsComponent implements OnInit {
     this.projectsService.findAll()
       .subscribe(projects => this.projects = projects)
   }
-  OnInput(value) {
-    this.serverName = value;
-    console.log(this.serverName);
-
-   }
 }

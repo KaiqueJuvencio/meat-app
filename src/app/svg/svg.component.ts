@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SvgComponent implements OnInit {
 
+  testeArray: string[] = [];
+  serverName;
   constructor() { }
 
   ngOnInit() {
   }
 
+  teste(){
+    this.testeArray.push("teste");
+  }
+
+  print(){
+    console.log(this.testeArray);
+
+  }
+
+  onKey(event) {const inputValue = event.target.value;
+  console.log(event.target.teste.value);
+  }
+
+  OnInput(value) {
+    this.serverName = value;
+    console.log(this.serverName);
+
+   }
 }

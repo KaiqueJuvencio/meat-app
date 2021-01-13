@@ -22,6 +22,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { LoginComponent } from './security/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SvgComponent } from './svg/svg.component';
+import { TesteDirective } from './directives/teste.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SvgComponent } from './svg/svg.component';
     ReviewsComponent,
     ProjectsComponent,
     LoginComponent,
-    SvgComponent
+    SvgComponent,
+    TesteDirective
   ],
   imports: [
     BrowserModule,
